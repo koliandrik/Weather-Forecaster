@@ -58,7 +58,7 @@ async function getCityLocation(city) {
 
 // Function to get the weather data for a city
 async function getWeather(cityData) {
-  const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${cityData.lat}&lon=${cityData.lon}&exclude=minutely,hourly&units=imperial&appid=${APIkey}`;
+  const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${cityData.lat}&lon=${cityData.lon}&exclude=hourly&units=imperial&appid=${APIkey}`;
 
   try {
     const response = await fetch(url);
